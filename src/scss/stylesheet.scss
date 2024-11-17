@@ -1,0 +1,267 @@
+$font-stack: "Mulish", sans-serif;
+$bold-font: 700;
+
+$primary-color: #F7F8FC;
+$secondary-color: #9FA2B4;
+$text-color: #252733;
+$border-color: #DFE0EB;
+$accent-color: #3751FF;
+
+
+body {
+    background-color: $primary-color;
+    font-family: $font-stack;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: $text-color;
+  }
+  
+  .custom-sidebar {
+    background-color: #363740; 
+  }
+  
+  ul {
+    list-style: none; /* removing bullet points */
+    padding-left: 0; /* Remove padding from the list */
+  }
+  
+  a {
+    text-decoration: none; /* removing default underline */
+  }
+  
+  header i {
+    color: $secondary-color; /* header icon colour */
+  }
+  
+  .acct-name {
+    color: $text-color;
+  }
+  
+  /* Graph legend */
+  #legend-1 {
+    color: $accent-color;
+  }
+  
+  #legend-2 {
+    color: #E5E5E5;
+  }
+  
+  h1 {
+    font-size: 24px;
+    font-weight: $bold-font;
+  }
+  
+  /* Sidebar heading */
+  nav h2 {
+    font-size: 19px;
+    font-weight: $bold-font;
+    color: #A4A6B3;
+    padding-bottom: 63px;
+  }
+  
+  h3 {
+    font-size: 19px;
+    font-weight: $bold-font;
+  }
+  
+  .group-blocks h3 {
+    color: $secondary-color;
+  }
+  
+  .group-blocks p {
+    font-size: 40px;
+    font-weight: $bold-font;
+  }
+  
+  .group-border {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+  }
+  
+  /* Border, h3, and p transition for the group blocks at the same time */
+  .group-blocks .group-area .group-border,
+  .group-blocks .group-area .group-border h3,
+  .group-blocks .group-area .group-border p {
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover colour on group blocks */
+  .group-blocks .group-area:hover .group-border,
+  .group-blocks .group-area:hover h3,
+  .group-blocks .group-area:hover p {
+    border-color: $accent-color; 
+    color: $accent-color; 
+  }
+  
+  /* Graph stats headings */
+  h4 {
+    font-size: 16px;
+    color: $secondary-color;
+  }
+  
+  /* Graph stats numbers */
+  .stats {
+    font-size: 24px;
+    font-weight: $bold-font;
+  }
+  
+  /* Sidebar Icons */
+  .icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10px;  
+    height: 10px; 
+    background-color: #363740;
+    margin: 0 15px;
+  }
+  
+  .item-1 {
+    background-color: rgba(159, 162, 180, 0.2); /* lower opacity to indicate selected sidebar item */
+    padding: 18px 0 18px 0;
+    border-left: 3px solid #DDE2FF;
+  }
+  
+  /* Sidebar icon colour */
+  .item-1 i {
+    color: #DDE2FF; 
+  }
+  
+  .item-2 i, .item-3 i, .item-4 i, .item-5 i, .item-6 i, .item-7 i, .item-8 i {
+    color: $secondary-color;
+  }
+  
+  /* Sidebar links colour */
+  .item-1 a {
+    color: #DDE2FF;
+  }
+  
+  .item-2 a, .item-3 a, .item-4 a, .item-5 a, .item-6 a, .item-7 a, .item-8 a {
+    color: $secondary-color;
+  }
+  
+  .nav-items a {
+    margin-right: 24px;
+  }
+  
+  .item-3, .item-4, .item-5 {
+    padding-bottom: 36px;
+  }
+  
+  .item-2 {
+    padding: 18px 0 36px 0;
+  }
+  
+  .item-6 {
+    padding-bottom: 36px;
+    border-bottom: 0.5px solid $secondary-color;
+    ;
+  }
+  
+  .item-7 {
+    padding: 32px 0 36px 0
+  }
+  
+  .graph-area {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+  }
+  
+  .graph-border {
+    border-bottom: 1pt solid $border-color; 
+  }
+  
+  .graph-text p {
+    color: $secondary-color;
+  }
+  
+  .tickets {
+    margin-bottom: 24px;
+  }
+  
+  .tickets-area, .tasks-area {
+    border: 1px solid $border-color;
+    border-radius: 8px;
+  }
+  
+  /* For unresolved tickets and task blocks */
+  .block-link {
+    color: $accent-color;
+  }
+  
+  .subhead {
+    font-size: 12px;
+    color: $secondary-color;
+  }
+  
+  .number {
+    color: $secondary-color;
+  }
+  
+  .new-task p {
+    color: $secondary-color;
+  }
+  
+  .new-task button {
+    color: $secondary-color;
+    background: none;
+    border: none;
+  }
+  
+  /* Task statuses */
+  .status {
+    font-size: 11px;
+    font-weight: $bold-font;
+    padding: 5px 12px;
+    border-radius: 8px;
+  }
+  
+  #status-1 {
+    background-color: #FEC400;
+    color: #ffffff;
+  }
+  
+  #status-2 {
+    background-color: #29CC97;
+    color: #ffffff;
+  }
+  
+  #status-3 {
+    background-color: #F0F1F7;
+    color: $secondary-color;
+  }
+  
+  /* New Task Modal Popup */
+  .taskModalTitle {
+    font-weight: $bold-font;
+    font-size: 19px;
+  }
+  
+  .modal-content {
+    background-color: $primary-color;
+  }
+  
+  .btn-primary {
+    background-color: $accent-color;
+  }
+  
+  .btn-primary:hover {
+    background-color: $accent-color;
+  }
+  
+  
+  /* Tablet and larger */
+  @media only screen and (min-width: 768px) {
+    .tickets {
+      margin-bottom: 0; 
+    }
+  }
+  
+  /* Desktop and larger */
+  @media only screen and (min-width: 1024px) {
+    .graph-border {
+      border-right: 1pt solid $border-color;
+      border-bottom: none;
+    }
+  }
